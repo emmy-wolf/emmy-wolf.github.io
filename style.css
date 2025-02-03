@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@800&family=Staatliches&display=swap');
+
+/* Thanks to JHEY // @jh3yy */
+html {
+	scroll-snap-type: y proximity;
+}
+
+li{
+	scroll-snap-align: center;
+	padding-left:0.2em;
+}
+
+body {
+	margin:0;
+	font-family:sans-serif;
+	font-family: 'Saira Extra Condensed', sans-serif;
+
+}
+
+.spacer {
+	color:#2d2d3f;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background:#eaf3fa;
+	margin-bottom:80px;
+	font-size:40px;
+}
+
+
+li{
+	/* IMPORTANT FOR THE SNAPPING */
+	scroll-snap-align: center;
+	padding-left:0.2em;
+}
+
+li > span {
+	display:inline-block;	
+}
+
+
+.cols2 {
+	padding-left:20px;
+	display: flex;
+	/* outline:1px solid green; */
+}
+
+h1, ul, li {
+	margin:0;
+	font-weight:800;
+	text-transform:uppercase;
+	letter-spacing:0.06em;
+	line-height:1;
+	font-size: clamp(30px, 8vw, 60px);
+	
+}
+
+h1 {
+	/* background:#c6e6ff; */
+	flex-grow: 0;
+	align-self: flex-start;	
+}
+ul {
+	list-style-type:none;
+	padding-left:0;
+	/* outline: 1px solid blue; */
+}
+
+ul, h1, li {
+	margin:0;
+	line-height:1;
+}
