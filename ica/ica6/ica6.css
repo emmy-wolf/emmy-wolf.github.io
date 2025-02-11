@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #ccc;
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+    border-top: 1mm solid red; 
+    border-bottom: 1mm solid red; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0)20%, rgba(0, 0, 0, 0)80%, rgba(0, 0, 0, 0.3)100%);
+    background-color: white;
+  }
+  
+  address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-image: url(./logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+  }
+  
+  /* Your CSS below here */
+
+  article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url('top-image.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+article::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url('bottom-image.png'); 
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
