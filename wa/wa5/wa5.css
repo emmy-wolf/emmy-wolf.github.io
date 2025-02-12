@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* html {
+    background-image: url('field.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+} */
+
+
+html { 
+    background: url('field2.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#baylor {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    left: 25%;
+    bottom: 5%;
+    padding: 5px;
+    position: absolute;
+    background-color: rgb(1, 91, 12);
+}
+
+#Blogo img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 24%;
+    bottom: 6.5%;
+}
+
+#Bname{
+    font-family: Impact;
+    font-size: 120%;
+    color: white;
+    position: absolute;
+    left: 35%;
+    bottom: 2%;
+}
+
+#Bscore{
+    font-family: Impact;
+    font-size: 220%;
+    color: white;
+    position: relative;
+    float: right;
+    bottom: 95%;
+}
+
+#timeout1 {
+    width: 15px;
+    height: 5px;
+    border: 1px solid yellow;
+    left: 30%;
+    bottom: 7%;
+    padding: 1px;
+    position: absolute;
+    background-color: black;
+}
+
+#timeout2 {
+    width: 15px;
+    height: 5px;
+    border: 1px solid yellow;
+    left: 32%;
+    bottom: 7%;
+    padding: 1px;
+    position: absolute;
+    background-color: black;
+}
+
+#timeout3 {
+    width: 15px;
+    height: 5px;
+    border: 1px solid black;
+    left: 34%;
+    bottom: 7%;
+    padding: 1px;
+    position: absolute;
+    background-color: white;
+}
+
+#cu {
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    right: 25%;
+    bottom: 5%;
+    padding: 5px;
+    position: absolute;
+    background-color: rgb(39, 39, 37);
+}
+
+#CUlogo img{
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    right: 24%;
+    bottom: 6.5%;
+}
+
+#Cname{
+    font-family: Impact;
+    font-size: 120%;
+    color: white;
+    position: absolute;
+    right: 35%;
+    bottom: 2%;
+}
+
+#Cscore{
+    font-family: Impact;
+    font-size: 220%;
+    color: white;
+    position: relative;
+    float: left;
+    bottom: 95%;
+}
+
+#timeout4 {
+    width: 15px;
+    height: 5px;
+    border: 1px solid black;
+    right: 31%;
+    bottom: 7%;
+    padding: 1px;
+    position: absolute;
+    background-color: white;
+}
+
+#timeout5 {
+    width: 15px;
+    height: 5px;
+    border: 1px solid white;
+    right: 33%;
+    bottom: 7%;
+    padding: 1px;
+    position: absolute;
+    background-color: white;
+}
+
+#timeout6 {
+    width: 15px;
+    height: 5px;
+    border: 1px solid gold;
+    right: 35%;
+    bottom: 7%;
+    padding: 1px;
+    position: absolute;
+    background-color: black;
+}
+
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: darkblue;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: inline-block;
+    position: absolute;
+    bottom: 3%;
+    left: 46%;
+  }
+
+.dot p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 0%;
+    left: 27%;
+    color: white;
+    font-size: 80%;
+}
+
+.dot img{
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    left: -22%;
+}
