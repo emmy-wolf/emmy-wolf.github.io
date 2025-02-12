@@ -158,7 +158,7 @@ html {
     background-color: black;
 }
 
-.dot {
+#dot {
     height: 100px;
     width: 100px;
     background-color: darkblue;
@@ -170,7 +170,7 @@ html {
     left: 46%;
   }
 
-.dot p{
+#dot p{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
     top: 0%;
@@ -179,7 +179,7 @@ html {
     font-size: 80%;
 }
 
-.dot img{
+#dot img{
     width: 70px;
     height: 50px;
     position: absolute;
