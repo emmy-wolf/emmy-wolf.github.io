@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+nav{
+    /* height: 50vh; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:40px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5cap;
+    position: sticky;
+}
+nav a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    overflow: hidden;
+
+}
+
+nav a:hover{
+    color: blue; 
+    /* align-items: baseline; */
+    transition: .2s;
+    transform: scale(1.5);
+    height: 20px;
+    overflow: hidden;
+}
+
+.photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+    border-color: lightblue;
+    /* border-radius: 15%; */
+    border-width: 50cap;
+}
+
+/* img:hover
+{
+    transition: .2s;
+    transform: scale(1.25);
+} */
+
+#adoptLink{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5cap;
+    width: 1000px;
+    height:40px;
+    text-align: center;
+    position: absolute;
+    left:14.25vw;
+    top:32vw;
+    margin: auto;
+    animation-name: boxmove2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxmove2{
+    
+    0%{
+        background-color: lightcoral;
+    } 
+    12.5%{
+        background-color: lightsalmon;
+    }
+    25%{
+        background-color: lightyellow;
+     }
+    37.5%{
+        background-color: lightgreen;
+    } 
+    50%{
+        background-color: lightblue;
+    }
+    100%{
+        background-color: pink;
+    }
+}
+
+#adoptLink p{
+    font-style: italic;
+    color: black;
+    position: absolute;
+    left:30vw;
+    bottom:-1.5vw;
+    animation-name: boxmove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;
+    /* animation-direction: alternate-reverse; */
+}
+
+@keyframes boxmove{
+    
+    from{
+        translate:-30vw 0vh;
+    } 
+    to{
+        translate: 25vw 0vh;
+    }
+}
