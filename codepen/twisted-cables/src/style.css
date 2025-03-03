@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+.c0 { fill: #fff3eb }
+.c1 { fill: #ffe6d5 }
+.c2 { fill: #ffccaa }
+.c3 { fill: #ffb380 }
+.c4 { fill: #ff9955 }
+.c5 { fill: #ff7f2a }
+.c6 { fill: #ff6600 }
+.f15 { filter: url(#f15) }
+.f10 { filter: url(#f10) }
