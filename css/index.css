@@ -77,9 +77,10 @@ h1 {
     grid-column-end: 3;
   }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
     .schedule {
-        grid-template-columns: 1fr;
+        grid-template-columns:auto;
+        width: 100%
     }
 
     h1 {
