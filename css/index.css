@@ -36,7 +36,7 @@ h1 {
 
 .container {
     width: 90%;
-    margin: auto;
+    margin: 0;
 }
 
 .schedule {
@@ -79,7 +79,7 @@ h1 {
 
 @media screen and (max-width: 800px) {
     .schedule {
-        grid-template-columns:auto;
+        grid-template-columns: 1fr;
         width: 100%
     }
 
