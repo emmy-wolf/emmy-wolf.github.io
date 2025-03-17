@@ -1,0 +1,159 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Aerospace.otf);
+ }
+
+header p {
+    color:white;
+    z-index: 5;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: white;
+    /* -webkit-background-clip: text; */
+    /* display:block; */
+    position: relative;
+    z-index: 3;
+    
+}
+
+h1 {
+    font-family: myFirstFont;
+    color: rgb(59, 253, 59);
+    font-size: 2.5em;
+    margin-top: 20px;
+    z-index: 5;
+    /* -webkit-background-clip: text; */
+    display:block;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.schedule {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    z-index: 5;
+    position: relative;
+}
+
+.event {
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.10);
+}
+
+.event h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgb(59, 253, 59);
+}
+
+.event p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.event:last-child:nth-child(3n - 2) {
+    grid-column-end: 3;
+  }
+
+@media screen and (max-width: 400px) {
+    .schedule {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .schedule {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+.dropdown {
+    justify-content: center;
+  }
+  
+  .dropdown-content {
+    text-align: left;
+    display: none;
+    position:absolute;
+    background-color: white;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 3;
+    overflow: hidden;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  z-index:1;
+}
+
+.stars {
+  background:#000 url(../img/stars.png) repeat top center;
+  z-index:1;
+}
+
+.twinkling{
+  background:transparent url(../img/twinkling.png) repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(../img/clouds.png) repeat top center;
+    z-index:2;
+    opacity: .5;
+    animation:move-clouds-back 200s linear infinite;
+}
