@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px auto;
+        }
+        #textElement {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ICA 10</h1>
+    
+    <button id="changeColor">Change Box Color</button>
+    <div id="colorBox"></div>
+    
+    <button id="changeText">Change Text</button>
+    <p id="textElement">Click the button to change this text.</p>
+
+    <script>
+        document.getElementById("changeColor").addEventListener("click", function() {
+            document.getElementById("colorBox").style.backgroundColor = "pink";
+        });
+
+        document.getElementById("changeText").addEventListener("click", function() {
+            document.getElementById("textElement").textContent = "The text has changed!";
+        });
+    </script>
+</body>
+</html>
