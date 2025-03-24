@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Story Generator</title>
+  <style>
+    body {
+      background-color: #ffc0cb;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 50px auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #ff69b4;
+    }
+    button {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #ff1493;
+    }
+    .story {
+      background: #fff0f5;
+      color: #c71585;
+      padding: 10px;
+      visibility: hidden;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Random Story Generator</h1>
+    <label for="customname">Enter custom name:</label>
+    <input id="customname" type="text" placeholder="Your name here" />
+    <div class="radio-group">
+      <label><input id="us" type="radio" name="unit" value="us" checked /> US</label>
+      <label><input id="uk" type="radio" name="unit" value="uk" /> UK</label>
+    </div>
+    <button class="randomize">Generate Story</button>
+    <p class="story"></p>
+  </div>
+  <script>
+    // Story elements
+    const characters = ['Alice', 'Bob', 'Charlie', 'Daisy', 'Ethan'];
+    const locations = ['the rec center', 'san francisco', 'disneyland', 'Spain'];
+    const actions = ['ran ralphie', 'found treasure', 'explored the area', 'had a great time'];
+
+    // Function to generate a random story
+    function generateStory() {
+      const customName = document.getElementById('customname').value;
+      const isUK = document.getElementById('uk').checked;
+      const name = customName !== '' ? customName : 'Someone';
+      const location = locations[Math.floor(Math.random() * locations.length)];
+      const action = actions[Math.floor(Math.random() * actions.length)];
+      const temperature = isUK ? `${Math.floor(Math.random() * 20) + 10}°C` : `${Math.floor(Math.random() * 50) + 50}°F`;
+
+      const storyText = `${name} went to ${location} and ${action}. The temperature was ${temperature}.`;
+
+      // Display the story
+      const storyParagraph = document.querySelector('.story');
+      storyParagraph.textContent = storyText;
+      storyParagraph.style.visibility = 'visible';
+    }
+
+    // Add event listener to the button
+    document.querySelector('.randomize').addEventListener('click', generateStory);
+  </script>
+</body>
+</html>
