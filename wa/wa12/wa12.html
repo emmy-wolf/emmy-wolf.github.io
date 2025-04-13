@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./wa12.css">
+  <title>Lyric Guessing Game</title>
+</head>
+<body>
+  <div class="app">
+    <header>Guess the Artist & Song!</header>
+    <section class="quote-text" id="js-quote-text"></section>
+    <div class="input-group">
+      <input type="text" id="js-artist-guess" placeholder="Guess the artist" />
+      <input type="text" id="js-title-guess" placeholder="Guess the song title" />
+    </div>
+    <div class="score" id="js-score">Score: 0</div>
+    <section class="controls">
+      <button type="button" id="js-new-quote" class="new-quote button">Generate new lyrics</button>
+      <button type="button" id="js-reveal-answer" class="button">Reveal Answer</button>
+    </section>
+    <div id="js-answer-text"></div>
+    <section class="explanation">
+        <p>I extended the ICA into a lyric guessing game! It uses the <a href="https://lyricsovh.docs.apiary.io/" target="_blank">Lyrics.ovh API</a> to display a snippet of lyrics from a popular song. The user has to guess the artist, and the app will let them know if they’re right when they click "Reveal Answer" in addition to adding a scoring system. I added user interaction, input validation, and randomness with multiple songs.</p>
+    </section>  
+  </div>
+  <script src="./wa12.js"></script>
+</body>
+</html>
