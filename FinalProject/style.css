@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: lightblue;
+  }
+  h4 {
+      width: 80%;             /* Set the desired width */ 
+      padding-bottom: 3%;
+      margin: auto;         /* Center the element horizontally */ 
+      text-align: center;     /* Optional: Center the text within the element */
+  }
+  #random-number {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .guess-digit {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #787c7e; /* default background so text is visible */
+    border-radius: 0.4rem;
+  }
+  .guess-row {
+    display: flex;
+    margin: 0.5rem 0;
+  }
+  .guess-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    color: white;
+  }
+  .green { background-color: #6aaa64; }
+  .yellow { background-color: #c9b458; }
+  .gray { background-color: #787c7e; }
+  .feedback-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .feedback-select {
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .feedback-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .feedback-box select.green {
+    background-color: #6aaa64;
+    color: white;
+  }
+  .feedback-box select.yellow {
+    background-color: #c9b458;
+    color: white;
+  }
+  .feedback-box select.gray {
+    background-color: #787c7e;
+    color: white;
+  }
+
+  #final-output {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
