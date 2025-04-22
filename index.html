@@ -14,11 +14,50 @@
       which ones are in your phone number but in the wrong spot (yellow), or 
       if the digit doesn't appear in the phone number at all (gray).
     </h4>
+    <input type="text" placeholder="Enter your phone number: ">
+    <button id="realNumber">Submit</button>
+    <ul></ul>
+    <div id="digit-labels"></div>
     <div id="random-number"></div>
     <div class="feedback-row" id="feedback-controls"></div>
     <button id="submit-feedback">Submit Feedback</button>
     <div id="guess-history"></div>
     <h2 id="final-output"></h2>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reverse Wordle Phone Entry</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <h1>Reverse Wordle Phone Guess</h1>
+  <div id="phone-entry">
+    <h3>Enter your real 10-digit phone number:</h3>
+    <input type="text" id="real-phone-number" maxlength="10" pattern="\d{10}" placeholder="1234567890" />
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <div id="game-container" style="display: none;">
+    <h4>
+      The Phone Number Wordle Bot is going to try to guess your phone number! 
+      Help it out by marking which digits are in the correct location (green),
+      which ones are in your phone number but in the wrong spot (yellow), or 
+      if the digit doesn't appear in the phone number at all (gray).
+    </h4>
+    <p><strong>Your Phone Number:</strong> <span id="display-phone-number"></span></p>
+    <div id="random-number"></div>
+    <div class="feedback-row" id="feedback-controls"></div>
+    <button id="submit-feedback">Submit Feedback</button>
+    <div id="guess-history"></div>
+    <h2 id="final-output"></h2>
+  </div>
+
+  <script src="./script.js"></script>
+  </body>
+</html> -->
