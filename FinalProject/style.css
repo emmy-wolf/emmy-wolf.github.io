@@ -12,6 +12,22 @@ body {
       margin: auto;         /* Center the element horizontally */ 
       text-align: center;     /* Optional: Center the text within the element */
   }
+  input {
+    height: 30px;
+    width: 200px;
+    margin: auto;
+  }
+  ul{
+    font-size: 30px;
+  }
+  #digit-labels {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
   #random-number {
     display: flex;
     gap: 3rem;
