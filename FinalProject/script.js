@@ -1,9 +1,9 @@
 const phoneNumber = document.getElementById("realNumber");
 const input = document.querySelector('input');
-// const listEl = document.querySelector('ul');
+const listEl = document.querySelector('ul');
 phoneNumber.addEventListener('click', () => {
   const inputValue = input.value;
-  //listEl.innerHTML = `${inputValue}`;
+  listEl.innerHTML = `${inputValue}`;
   const labelContainer = document.getElementById("digit-labels");
   labelContainer.innerHTML = ''; 
   for (let i = 0; i < inputValue.length; i++) {
@@ -137,8 +137,18 @@ function handleSubmitFeedback() {
   attempts.push(lastAttempt);
 
   if (knownGreens.every(d => d !== null)) {
+    //const success = document.createElement("div");
     document.getElementById("final-output").textContent = `Success! Your phone number is ${knownGreens.join('')}`;
-  } else {
+
+    confetti({
+      particleCount: 150,
+      spread: 100,
+      origin: { y: 0.4 }
+    });
+
+    // 👇 Scroll to the bottom to reveal final message
+    document.getElementById("final-output").scrollIntoView({ behavior: "smooth" });
+    } else {
     const nextGuess = generateSmarterGuess();
     displayRandomNumber(nextGuess);
   }
