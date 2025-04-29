@@ -12,6 +12,25 @@ body {
       margin: auto;         /* Center the element horizontally */ 
       text-align: center;     /* Optional: Center the text within the element */
   }
+  #instructions {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height:250px;
+    width:400px;
+    background-color: white;
+    border-color: black;
+    text-align: center;
+    border-radius: 5%;
+    border-style: solid;
+  }
+  #green{
+    color:#6aaa64;
+  }
+  #yellow{
+    color:#c9b458;
+  }
+  #gray{
+    color:#787c7e;
+  }
   input {
     height: 30px;
     width: 200px;
