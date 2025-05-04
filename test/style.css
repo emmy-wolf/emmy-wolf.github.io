@@ -1,0 +1,156 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: lightblue;
+  }
+  
+  h4 {
+    width: 80%;
+    padding-bottom: 3%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #instructions {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 360px;
+    width: 700px;
+    background-color: white;
+    border-color: black;
+    text-align: center;
+    border-radius: 5%;
+    border-style: solid;
+    padding: 1%;
+  }
+  
+  #green {
+    color: #6aaa64;
+  }
+  
+  #gray {
+    color: #787c7e;
+  }
+  
+  input {
+    height: 30px;
+    width: 200px;
+    margin: auto;
+  }
+  
+  ul {
+    font-size: 30px;
+  }
+  
+  #digit-labels {
+    display: flex;
+    gap: 3.75rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  #random-number {
+    display: flex;
+    gap: 3.75rem;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .guess-digit {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #787c7e;
+    border-radius: 0.4rem;
+  }
+  
+  .guess-row {
+    display: flex;
+    margin: 0.5rem 0;
+  }
+  
+  .guess-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    color: white;
+  }
+  
+  .green {
+    background-color: #6aaa64;
+  }
+  
+  .gray {
+    background-color: #787c7e;
+  }
+  
+  .feedback-row {
+    display: flex;
+    gap: 0.1rem; /* Reduced gap to align with digits */
+    margin-bottom: 1rem;
+    justify-content: center; /* Center align dropdowns below digits */
+  }
+  
+  .feedback-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feedback-select {
+    width: 6rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+    background-color: #f0f0f0;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem; /* Small space between digit and dropdown */
+  }
+  
+  .feedback-select:focus {
+    outline: none;
+    border-color: #6aaa64;
+  }
+  
+  .feedback-box select.green {
+    background-color: #6aaa64;
+    color: white;
+  }
+  
+  .feedback-box select.gray {
+    background-color: #787c7e;
+    color: white;
+  }
+  
+  .guess-digit {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #787c7e; /* default background */
+    border-radius: 0.4rem;
+  }
+  
+  .guess-digit.green {
+    background-color: #6aaa64;
+  }
+  

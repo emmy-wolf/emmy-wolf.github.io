@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reverse Wordle Phone Entry</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <h1>Reverse Wordle Phone Guess</h1>
+  <div id="instructions"><br>
+    The Phone Number Wordle Bot is going to try to guess your phone number! <br><br>
+    Enter your real phone number so that it will appear above the random numbers as a guide. <br><br>
+    Match your real phone number digits with the random digits that appear below it. (aka compare each column by verifying that the numbers on top of each other align)<br><br>
+    Mark which digits are in the correct location by selecting <div id="green">(green)</div><br>
+    or if the digit doesn't appear in that spot in your phone number select <div id="gray">(gray)</div>
+    <br>
+    If you mess up and select "Gray" on a number that was actually "Green" or vice versa....yikes that's a bad mistake on you, luckily just refresh the page and you can try again.
+
+  </div>
+  
+  <input type="text" id="real-phone-number" maxlength="10" pattern="\d{10}" placeholder="Enter your 10-digit phone number" />
+  <button id="realNumber">Submit</button>
+  <ul></ul>
+  <div id="digit-labels"></div>
+  <div id="random-number"></div>
+  <div class="feedback-row" id="feedback-controls"></div>
+  <button id="submit-feedback">Submit Feedback</button>
+  <div id="guess-history"></div>
+  <h2 id="final-output"></h2>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
